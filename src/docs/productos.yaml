@@ -1,0 +1,152 @@
+paths:
+  /api/products:
+    get:
+      summary: Obtiene un listado de todos los productos 
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Los productos se entregaron de la base de datos
+          content:
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
+        "500": 
+          description: Error del servidor
+    post:
+      summary: Crea un nuevo producto
+      tags:
+        - Products
+      responses:
+        "200":
+          description: El producto fue creado exitosamente
+          content:
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#components/schemas/Product'
+        "404":
+          description: Algunos datos obligatorios no fueron proporcionados
+        "500": 
+          description: Error del servidor
+  /mockProducts:
+    get:
+      summary: Devuelve 100 productos ficticios
+      tags:
+        - Products
+      responses:
+        "200":
+          description: Los productos se enviaron exitosamente
+        "500": 
+          description: Error del servidor
+  /api/products/:pid:
+    get:
+      summary: Ver detalles del producto proporcionado
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto a consultar
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: Detalles del producto consultados exitosamente
+        "400":
+          description: El producto no existe
+        "401":
+          description: El producto no pertenece al usuario
+        "500": 
+          description: Error del servidor
+    put:
+      summary: Modifica el producto proporcionado
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto a modificar
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: El producto fue modificado exitosamente
+        "400":
+          description: El producto no existe
+        "401":
+          description: El producto no pertenece al usuario
+        "500": 
+          description: Error del servidor
+    delete:
+      summary: Elimina el producto proporcionado
+      tags:
+        - Products
+      parameters:
+        - name: pid
+          in: path
+          required: true
+          description: id del producto a eliminar
+          schema:
+            $type: String
+      responses:
+        "200":
+          description: El producto fue eliminado exitosamente
+        "400":
+          description: El producto no existe
+        "401":
+          description: El producto no es del usuario que trata de eliminarlo
+        "500": 
+          description: Error del servidor
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        _id: 
+          type: ObjectId
+          description: ID autogenerado
+        title:
+          type: String
+          description: Titulo del producto
+        description:
+          type: String
+          description: Descripción del usuario
+        code:
+          type: String
+          description: Código del producto
+        price:
+          type: Number
+          description: Precio por unidad del producto
+        status:
+          type: Boolean
+          description: Estado del producto
+        stock:
+          type: Number
+          description: Cantidad de productos disponibles
+        thumbnails:
+          type: Array
+          description: Arreglo de imagenes del producto
+        category:
+          type: String
+          description: Categoría del producto
+        owner:
+          type: String
+          description: Usuario dueño del producto
+      example:
+        _id: ObjectId(1q2e5r4g7y8)
+        title: Producto
+        description: Este es una descripcion
+        code: c1-p4p4
+        price: 45
+        stock: 100
+        status: true
+        category: Ropa
+        thumbnails: []
+        owner: admin

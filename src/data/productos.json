@@ -1,0 +1,125 @@
+[
+	{
+		"title": "Producto 1",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro1",
+		"stock": 25,
+		"status": "true",
+		"category": "gafas",
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 1
+	},
+	{
+		"title": "Producto 2",
+		"description": "Descripcion de prueba",
+		"price": "300",
+		"code": "pro2",
+		"stock": "20",
+		"status": "true",
+		"category": "gafas",
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 2
+	},
+	{
+		"title": "Producto 3",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro3",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 3
+	},
+	{
+		"title": "Producto 4",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro4",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 4
+	},
+	{
+		"title": "Producto 5",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro5",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 5
+	},
+	{
+		"title": "Producto 6",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro6",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 6
+	},
+	{
+		"title": "Producto 7",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro7",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 7
+	},
+	{
+		"title": "Producto 8",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro8",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 8
+	},
+	{
+		"title": "Producto 9",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro9",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 9
+	},
+	{
+		"title": "Producto 10",
+		"description": "Este es un producto de prueba",
+		"price": 200,
+		"thumbnail": "Sin Imagen",
+		"code": "pro10",
+		"stock": 25,
+		"thumbnails": [
+			"C:\\Users\\Administrator\\Documents\\Cursos\\CoderHouse\\Desafios\\PrimeraPreEntrega\\src\\public\\images\\gafas.jpg"
+		],
+		"id": 10
+	}
+]

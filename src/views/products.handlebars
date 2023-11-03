@@ -1,0 +1,39 @@
+<div>
+    <h1>Bienvenido!</h1>
+    <div>
+        <p>Nombre: {{user.first_name}} {{user.last_name}}</p>
+        <p>Correo: {{user.email}}</p>
+        <p>Edad: {{user.age}}</p>
+        <p>Rol: {{user.rol}}</p>
+    </div>
+    <a href="/logout">
+        <button>Logout</button>
+    </a>
+    <br/>
+    <h2>Productos Disponibles</h2>
+    {{#each products}}
+    <div>
+        <span>{{this.title}}:</span>
+        <span>{{this.description}}</span>
+        <p>Precio: ${{this.price}}</p>
+        <p>Stock: {{this.stock}}</p>
+        <p>Categoría: {{this.category}}</p>
+        <p>Status: {{this.status}}</p>
+        <button>Añadir al carrito</button>
+        <br/><br/>
+    </div>
+    {{/each}}
+    <br/><br/>
+    <div>
+        {{#if hasPrevPage}}
+            <a href={{prevLink}}>
+                <button>Anterior</button>
+            </a>
+        {{/if}}
+        {{#if hasNextPage}}
+            <a href={{nextLink}}>
+                <button>Siguiente</button>
+            </a>
+        {{/if}}
+    </div>
+</div>
